@@ -1,0 +1,116 @@
+body {
+    background: url("./images/bg-desktop.svg") hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    padding: 30px 30px 0px 50px;
+    width: 190px;
+}
+
+.mockups-img {
+    padding: 50px;
+}
+
+.text {
+    color: white;
+    margin-top: 60px;
+    padding-right: 28px;
+    position: relative;
+
+}
+
+.primary-button {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-size: 16px;
+    box-shadow: 6px 6px 20px -1px #2e2b3124,
+        -6px -6px 20px -1px #2d293340;
+    margin-top: 20px;
+    cursor: pointer;
+
+    /* margen para agrandar el alto del contenedor */
+    margin-bottom: 90px;
+}
+
+.container {
+    display: flex;
+    justify-items: center;
+}
+
+.icons {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    display: flex;
+}
+
+.icons a {
+    margin: 10px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    body {
+        background: url("./images/bg-mobile.svg"), hsl(257, 40%, 49%);
+        ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .container {
+        flex-flow: column;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .mockups-img {
+        width: 90%;
+        padding: 0%;
+
+    }
+
+    .logo {
+        padding: 30px 30px 40px 25px;
+        width: 150px;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 30px;
+        padding-right: 0;
+    }
+
+ .icons {
+    position: unset;
+    display: flex;
+    justify-content: center;
+ }
+
+}
